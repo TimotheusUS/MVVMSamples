@@ -9,5 +9,5 @@
 			</StackPanel>
 		</Border>
     </DataTemplate>
-    <BitmapImage x:Key="SmartPlug" UriSource="pack://application:,,,/ClassLibrary1;component/Image/smart-plug.png" />
+    <BitmapImage x:Key="SmartPlug" UriSource="pack://application:,,,/TimotheusUS.MVVMsamples.MyStyles;component/Image/smart-plug.png" />
 </ResourceDictionary>

@@ -136,6 +136,10 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\MyStyles\MyStyles.csproj">
+      <Project>{cbe76131-819e-415d-bb44-b1db1fa49274}</Project>
+      <Name>MyStyles</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Utilities\Utilities.csproj">
       <Project>{9fde7fee-d4de-47a7-a5e8-e35a805ac906}</Project>
       <Name>Utilities</Name>

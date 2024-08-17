@@ -2,7 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>net48</TargetFramework>
-    <AssemblyName>TimotheusUS.MVVMsamples.Utilities</AssemblyName>
+    <AssemblyName>TimotheusUS.MVVMsamples.$(MSBuildProjectName)</AssemblyName>
+    <RootNamespace>TimotheusUS.MVVMsamples.$(MSBuildProjectName)</RootNamespace>
   </PropertyGroup>
 
 </Project>

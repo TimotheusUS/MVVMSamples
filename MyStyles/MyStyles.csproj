@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net462</TargetFramework>
+    <RootNamespace>TimotheusUS.MVVMsamples.$(MSBuildProjectName)</RootNamespace>
+    <AssemblyName>TimotheusUS.MVVMsamples.$(MSBuildProjectName)</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Resource Include="Image\smart-plug.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Image\" />
+  </ItemGroup>
+
+</Project>
