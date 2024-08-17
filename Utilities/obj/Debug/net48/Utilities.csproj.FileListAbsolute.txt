@@ -1,0 +1,9 @@
+C:\Users\tstst\source\repos\GitHub\MVVMSamples_NEW\Utilities\bin\Debug\net48\TimotheusUS.MVVMsamples.Utilities.dll
+C:\Users\tstst\source\repos\GitHub\MVVMSamples_NEW\Utilities\bin\Debug\net48\TimotheusUS.MVVMsamples.Utilities.pdb
+C:\Users\tstst\source\repos\GitHub\MVVMSamples_NEW\Utilities\obj\Debug\net48\Utilities.csproj.AssemblyReference.cache
+C:\Users\tstst\source\repos\GitHub\MVVMSamples_NEW\Utilities\obj\Debug\net48\Utilities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tstst\source\repos\GitHub\MVVMSamples_NEW\Utilities\obj\Debug\net48\Utilities.AssemblyInfoInputs.cache
+C:\Users\tstst\source\repos\GitHub\MVVMSamples_NEW\Utilities\obj\Debug\net48\Utilities.AssemblyInfo.cs
+C:\Users\tstst\source\repos\GitHub\MVVMSamples_NEW\Utilities\obj\Debug\net48\Utilities.csproj.CoreCompileInputs.cache
+C:\Users\tstst\source\repos\GitHub\MVVMSamples_NEW\Utilities\obj\Debug\net48\TimotheusUS.MVVMsamples.Utilities.dll
+C:\Users\tstst\source\repos\GitHub\MVVMSamples_NEW\Utilities\obj\Debug\net48\TimotheusUS.MVVMsamples.Utilities.pdb
