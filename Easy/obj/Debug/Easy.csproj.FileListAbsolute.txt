@@ -103,6 +103,7 @@ C:\Users\tstst\source\repos\GitHub\MVVMSamples\Easy\bin\Debug\Microsoft.Xaml.Beh
 C:\Users\tstst\source\repos\GitHub\MVVMSamples\Easy\obj\Debug\Easy.csproj.AssemblyReference.cache
 C:\Users\tstst\source\repos\GitHub\MVVMSamples\Easy\obj\Debug\Easy.csproj.SuggestedBindingRedirects.cache
 C:\Users\tstst\source\repos\GitHub\MVVMSamples\Easy\obj\Debug\View\View1.baml
+C:\Users\tstst\source\repos\GitHub\MVVMSamples\Easy\obj\Debug\Dictionary\DictionaryBlue.baml
 C:\Users\tstst\source\repos\GitHub\MVVMSamples\Easy\obj\Debug\App.baml
 C:\Users\tstst\source\repos\GitHub\MVVMSamples\Easy\obj\Debug\View\ViewMain.g.cs
 C:\Users\tstst\source\repos\GitHub\MVVMSamples\Easy\obj\Debug\View\View2.g.cs
@@ -113,7 +114,6 @@ C:\Users\tstst\source\repos\GitHub\MVVMSamples\Easy\obj\Debug\TimotheusUS.MVVMsa
 C:\Users\tstst\source\repos\GitHub\MVVMSamples\Easy\obj\Debug\TimotheusUS.MVVMsamples.Easy_MarkupCompile.lref
 C:\Users\tstst\source\repos\GitHub\MVVMSamples\Easy\obj\Debug\View\ViewMain.baml
 C:\Users\tstst\source\repos\GitHub\MVVMSamples\Easy\obj\Debug\View\View2.baml
-C:\Users\tstst\source\repos\GitHub\MVVMSamples\Easy\obj\Debug\Dictionary\DictionaryBlue.baml
 C:\Users\tstst\source\repos\GitHub\MVVMSamples\Easy\obj\Debug\Dictionary\DictionaryRed.baml
 C:\Users\tstst\source\repos\GitHub\MVVMSamples\Easy\obj\Debug\TimotheusUS.MVVMsamples.Easy.g.resources
 C:\Users\tstst\source\repos\GitHub\MVVMSamples\Easy\obj\Debug\TimotheusUS.MVVMsamples.Easy.Properties.Resources.resources

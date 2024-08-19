@@ -1,0 +1,11 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:Views="clr-namespace:TimotheusUS.MVVMsamples.Dynamic"
+                    xmlns:ViewModels="clr-namespace:TimotheusUS.MVVMsamples.Dynamic">
+    <DataTemplate DataType="{x:Type ViewModels:MeasureViewModel}">
+        <Views:MeasureView />
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type ViewModels:SwitchViewModel}">
+        <Views:SwitchView />
+    </DataTemplate>
+</ResourceDictionary>

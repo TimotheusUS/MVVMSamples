@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyStyles", "MyStyles\MyStyl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RelativeSource", "RelativeSource\RelativeSource.csproj", "{F56825A5-E0BE-481F-8E07-3DD3270DE8EE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dynamic", "Dynamic\Dynamic.csproj", "{47079CD5-B8AA-49D8-AC60-EB628E4F2A5B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{F56825A5-E0BE-481F-8E07-3DD3270DE8EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F56825A5-E0BE-481F-8E07-3DD3270DE8EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F56825A5-E0BE-481F-8E07-3DD3270DE8EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47079CD5-B8AA-49D8-AC60-EB628E4F2A5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47079CD5-B8AA-49D8-AC60-EB628E4F2A5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47079CD5-B8AA-49D8-AC60-EB628E4F2A5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47079CD5-B8AA-49D8-AC60-EB628E4F2A5B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
