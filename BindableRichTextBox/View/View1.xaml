@@ -1,0 +1,25 @@
+﻿<UserControl x:Class="TimotheusUS.MVVMsamples.BindableRichTextBox.View1"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:dxre="http://schemas.devexpress.com/winfx/2008/xaml/richedit" 
+             xmlns:dxb="http://schemas.devexpress.com/winfx/2008/xaml/bars"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core" 
+             xmlns:local="clr-namespace:TimotheusUS.MVVMsamples.BindableRichTextBox"
+             mc:Ignorable="d" 
+             d:DesignHeight="70" d:DesignWidth="300">
+    <StackPanel >
+        <StackPanel Orientation="Horizontal" Margin="12">
+            <RadioButton Margin="12" GroupName="power" IsChecked="{Binding ESNG1000WIsChecked}">
+                <TextBlock TextWrapping="Wrap" Text="ESNG 1000W"/>
+            </RadioButton>
+            <RadioButton Margin="12" GroupName="power" IsChecked="{Binding HFE1600IsChecked}">
+                <TextBlock TextWrapping="Wrap" Text="HFE1600"/>
+            </RadioButton>
+        </StackPanel>
+        <!--Mit Standard-RichtTextBox Bindung des Textes nicht möglich-->
+        <!--<BindableRichTextBox Margin="12" Width="1000" Height="300"  Source="{Binding Blocks}" />-->
+        <local:BindableRichTextBox x:Name="myRtf" Margin="12" Width="1000" Height="300"  Source="{Binding Blocks}" />
+    </StackPanel>
+</UserControl>

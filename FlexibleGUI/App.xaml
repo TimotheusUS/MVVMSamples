@@ -1,4 +1,4 @@
-﻿<Application x:Class="TimotheusUS.MVVMsamples.BindableRichTextBox.App"
+﻿<Application x:Class="TimotheusUS.MVVMsamples.FlexibleGUI.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              StartupUri="View/ViewMain.xaml">

@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RelativeSource", "RelativeS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dynamic", "Dynamic\Dynamic.csproj", "{47079CD5-B8AA-49D8-AC60-EB628E4F2A5B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlexibleGUI", "FlexibleGUI\FlexibleGUI.csproj", "{7AF41FC8-61F8-43ED-8B07-CFE033611F9B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BindableRichTextBox", "BindableRichTextBox\BindableRichTextBox.csproj", "{0F962F70-2C47-44ED-97E5-2A35E91EDDB2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{47079CD5-B8AA-49D8-AC60-EB628E4F2A5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{47079CD5-B8AA-49D8-AC60-EB628E4F2A5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{47079CD5-B8AA-49D8-AC60-EB628E4F2A5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7AF41FC8-61F8-43ED-8B07-CFE033611F9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AF41FC8-61F8-43ED-8B07-CFE033611F9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AF41FC8-61F8-43ED-8B07-CFE033611F9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AF41FC8-61F8-43ED-8B07-CFE033611F9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F962F70-2C47-44ED-97E5-2A35E91EDDB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F962F70-2C47-44ED-97E5-2A35E91EDDB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F962F70-2C47-44ED-97E5-2A35E91EDDB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F962F70-2C47-44ED-97E5-2A35E91EDDB2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

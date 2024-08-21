@@ -1,17 +1,15 @@
 ﻿using System.Reflection;
-using System.Resources;
-using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using System.Windows;
 
 // Allgemeine Informationen über eine Assembly werden über die folgenden 
 // Attribute gesteuert. Ändern Sie diese Attributwerte, um die Informationen zu ändern,
 // die mit einer Assembly verknüpft sind.
-[assembly: AssemblyTitle("TimotheusUS.MVVMsamples.BindableRichTextBox")]
+[assembly: AssemblyTitle("TimotheusUS.MVVMsamples.FlexibleGUI")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Microsoft")]
-[assembly: AssemblyProduct("TimotheusUS.MVVMsamples.BindableRichTextBox")]
+[assembly: AssemblyProduct("TimotheusUS.MVVMsamples.FlexibleGUI")]
 [assembly: AssemblyCopyright("Copyright © Microsoft 2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -33,11 +31,11 @@ using System.Windows;
 
 [assembly: ThemeInfo(
     ResourceDictionaryLocation.None, //Speicherort der designspezifischen Ressourcenwörterbücher
- //(wird verwendet, wenn eine Ressource auf der Seite
- // oder in den Anwendungsressourcen-Wörterbüchern nicht gefunden werden kann.)
+                                     //(wird verwendet, wenn eine Ressource auf der Seite
+                                     // oder in den Anwendungsressourcen-Wörterbüchern nicht gefunden werden kann.)
     ResourceDictionaryLocation.SourceAssembly //Speicherort des generischen Ressourcenwörterbuchs
- //(wird verwendet, wenn eine Ressource auf der Seite, in der Anwendung oder einem 
- // designspezifischen Ressourcenwörterbuch nicht gefunden werden kann.)
+                                              //(wird verwendet, wenn eine Ressource auf der Seite, in der Anwendung oder einem 
+                                              // designspezifischen Ressourcenwörterbuch nicht gefunden werden kann.)
 )]
 
 
