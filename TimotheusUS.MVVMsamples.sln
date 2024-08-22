@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlexibleGUI", "FlexibleGUI\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BindableRichTextBox", "BindableRichTextBox\BindableRichTextBox.csproj", "{0F962F70-2C47-44ED-97E5-2A35E91EDDB2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestGraphics", "TestGraphics\TestGraphics.csproj", "{FC23233A-1AF4-4A21-8C7A-A6CD35DEBB19}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{0F962F70-2C47-44ED-97E5-2A35E91EDDB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0F962F70-2C47-44ED-97E5-2A35E91EDDB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0F962F70-2C47-44ED-97E5-2A35E91EDDB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC23233A-1AF4-4A21-8C7A-A6CD35DEBB19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC23233A-1AF4-4A21-8C7A-A6CD35DEBB19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC23233A-1AF4-4A21-8C7A-A6CD35DEBB19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC23233A-1AF4-4A21-8C7A-A6CD35DEBB19}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

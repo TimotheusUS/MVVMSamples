@@ -1,0 +1,13 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                  xmlns:vm="clr-namespace:SQ15Mar2015_Learning">
+	<DataTemplate x:Key="ItemValueDateTemplateRed" >
+		<Border BorderThickness="1" BorderBrush="Red">
+			<StackPanel>
+				<TextBlock Text="{Binding Path=ItemValue}" />
+				<TextBlock Text="{Binding Path=DateOfGeneration}"/>
+			</StackPanel>
+		</Border>
+    </DataTemplate>
+    <BitmapImage x:Key="SmartPlug" UriSource="pack://application:,,,/TimotheusUS.MVVMsamples.MyStyles;component/Image/smart-plug.png" />
+</ResourceDictionary>

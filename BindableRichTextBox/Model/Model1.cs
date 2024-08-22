@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Windows.Documents;
 using System.Windows;
+using System.Collections.ObjectModel;
 
 namespace TimotheusUS.MVVMsamples.BindableRichTextBox
 {

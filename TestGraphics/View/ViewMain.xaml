@@ -1,0 +1,16 @@
+﻿<Window x:Class="TimotheusUS.MVVMsamples.TestGraphics.ViewMain"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:Views="clr-namespace:TimotheusUS.MVVMsamples.TestGraphics"
+        xmlns:ViewModels="clr-namespace:TimotheusUS.MVVMsamples.TestGraphics"
+        xmlns:Helper="clr-namespace:TimotheusUS.MVVMsamples.TestGraphics"
+        Helper:WindowClosingBehavior.Closed="{Binding ClosedCommand}"
+        Title="MainWindow" Height="900" Width="525">
+    <Window.DataContext>
+        <ViewModels:ViewModelMain />
+    </Window.DataContext>
+    <DockPanel>
+        <Views:View1 DockPanel.Dock="Top" DataContext="{Binding ViewModel1}" />
+        <Views:View2 DataContext="{Binding ViewModel2}" />
+    </DockPanel>
+</Window>

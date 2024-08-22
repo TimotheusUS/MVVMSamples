@@ -70,6 +70,7 @@ namespace TimotheusUS.MVVMsamples.BindableRichTextBox
                 if (!this.lockCheckMechanism)
                 {
                     this.lockCheckMechanism = true;
+
                     if (e.PropertyName == nameof(this.ESNG1000WIsChecked))
                     {
                         this.Blocks = this.model1.GetESNG1000WDocumentation();

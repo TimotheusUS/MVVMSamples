@@ -7,11 +7,6 @@ namespace TimotheusUS.MVVMsamples.BindableRichTextBox
         public View1()
         {
             InitializeComponent();
-            myRtf.TextChanged += MyRtf_TextChanged;
-        }
-
-        private void MyRtf_TextChanged(object sender, TextChangedEventArgs e)
-        {
         }
     }
 }

@@ -7,69 +7,48 @@ namespace TimotheusUS.MVVMsamples.BindableRichTextBox
 {
     public sealed class BindableRichTextBox : RichTextBox
     {
-        public static readonly DependencyProperty SourceProperty = DependencyProperty.Register("Source", typeof(List<Paragraph>), typeof(BindableRichTextBox), new PropertyMetadata(OnSourceChanged));
-        //public static readonly DependencyProperty MyTextProperty = DependencyProperty.Register("MyText", typeof(string), typeof(BindableRichTextBox), new UIPropertyMetadata(new PropertyChangedCallback(BindableRichTextBox.MyTextLoads)));
-
-        //BindableRichTextBox() : base()
-        //{ 
-        
-        //}
+        //public static readonly DependencyProperty SourceProperty =
+        //    DependencyProperty.Register("Source", typeof(List<Paragraph>), typeof(BindableRichTextBox),
+        //        new FrameworkPropertyMetadata(null, FrameworkPropertyMetadataOptions.BindsTwoWayByDefault, OnSourceChanged));
+        public static readonly DependencyProperty SourceProperty =
+            DependencyProperty.Register("Source", typeof(List<Paragraph>), typeof(BindableRichTextBox), new PropertyMetadata(OnSourceChanged));
 
         public List<Paragraph> Source
         {
-            get
-            {
-                return GetValue(SourceProperty) as List<Paragraph>;
-            }
-            set
-            {
-                SetValue(SourceProperty, value);
-            }
+            get { return (List<Paragraph>)GetValue(SourceProperty); }
+            set { SetValue(SourceProperty, value); }
         }
 
-        public string MyText
+        private static void OnSourceChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
         {
-            get
-            {
-                return GetValue(SourceProperty) as string;
-            }
-            set
-            {
-                SetValue(SourceProperty, value);
-            }
-        }
+            var rtf = d as BindableRichTextBox;
+            var newParagraphs = e.NewValue as List<Paragraph>;
 
-        private static void OnSourceChanged(DependencyObject obj, DependencyPropertyChangedEventArgs e)
-        {
-            var rtf = (BindableRichTextBox)obj;
-
+            rtf.TextChanged -= Rtf_TextChanged;
             rtf.Document.Blocks.Clear();
 
-            if (rtf.Source != null)
+            foreach (var paragraph in newParagraphs)
             {
-                foreach (var item in rtf.Source)
+                rtf.Document.Blocks.Add(paragraph);
+            }
+
+            rtf.TextChanged += Rtf_TextChanged;
+        }
+
+        private static void Rtf_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            var rtf = sender as BindableRichTextBox;
+            var updatedSource = new List<Paragraph>();
+
+            foreach (var block in rtf.Document.Blocks)
+            {
+                if (block is Paragraph paragraph)
                 {
-                    rtf.Document.Blocks.Add(item);
+                    updatedSource.Add(paragraph);
                 }
             }
-        }
 
-        private static void MyTextLoads(DependencyObject dependencyObject, DependencyPropertyChangedEventArgs e)
-        {
-            if (dependencyObject is BindableRichTextBox brtf)
-            {
-                if (e.NewValue != null)
-                    brtf.TextChanged += Brtf_TextChanged;
-                else
-                    brtf.TextChanged -= Brtf_TextChanged;
-            }
-        }
-
-        private static void Brtf_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            //var brtb = sender as BindableRichTextBox;
-
-            //brtb.ch
+            rtf.SetCurrentValue(SourceProperty, updatedSource);
         }
     }
 }

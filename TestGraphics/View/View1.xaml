@@ -1,0 +1,25 @@
+﻿<UserControl x:Class="TimotheusUS.MVVMsamples.TestGraphics.View1"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="700" d:DesignWidth="300">
+    <StackPanel Height="500">
+        <ListBox ItemsSource="{Binding History}" ItemTemplate="{StaticResource ResourceKey=ItemValueDateTemplateBlueViolet}" Height="50"/>
+        <WrapPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Button Command="{Binding ConvertTextCommand}" Background="{StaticResource SensorSwMakeColored}" />
+            <Button Command="{Binding ConvertTextCommand}" Background="{StaticResource SensorSwBrakeColored}" />
+            <Button Command="{Binding ConvertTextCommand}" Background="{StaticResource SensorSwMakeDualColored}" />
+            <Button Command="{Binding ConvertTextCommand}" Background="{StaticResource SensorSwBrakeDualColored}" />
+            <Button Command="{Binding ConvertTextCommand}" Background="{StaticResource SensorSwAntiDualColored}" />
+            <Button Command="{Binding ConvertTextCommand}" Background="{StaticResource SensorStartColored}" />
+            <Button Command="{Binding ConvertTextCommand}" Background="{StaticResource SensorStopColored}" />
+            <Button Command="{Binding ConvertTextCommand}" Background="{StaticResource SensorCamshaftColored}" />
+            <Button Command="{Binding ConvertTextCommand}" Background="{StaticResource SensorEDMColored}" />
+            <Button Command="{Binding ConvertTextCommand}" Background="{StaticResource SensorStartEDMColored}" />
+            <Button Command="{Binding ConvertTextCommand}" Background="{StaticResource RelayIcon}" />
+            
+        </WrapPanel>
+    </StackPanel>
+</UserControl>
