@@ -1,5 +1,7 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Windows.Documents;
+using System.Windows.Input;
 using TimotheusUS.MVVMsamples.Utilities;
 
 namespace TimotheusUS.MVVMsamples.BindableRichTextBox

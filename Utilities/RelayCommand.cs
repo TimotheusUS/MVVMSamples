@@ -1,16 +1,31 @@
 ﻿using System;
 using System.Windows.Input;
 
-namespace TimotheusUS.MVVMsamples.Utilities
+public class RelayCommand : ICommand
 {
-    public class RelayCommand : ICommand
+    private readonly Action<object> execute;
+    private readonly Func<object, bool> canExecute;
+
+    public RelayCommand(Action<object> execute, Func<object, bool> canExecute = null)
     {
-        private readonly Action action;
-        public RelayCommand(Action action) => this.action = action;        
-        public void Execute(object parameter) => this.action();        
-        public bool CanExecute(object parameter) => true;        
-#pragma warning disable 67
-        public event EventHandler CanExecuteChanged;
-#pragma warning restore 67
+        this.execute = execute ?? throw new ArgumentNullException(nameof(execute));
+        this.canExecute = canExecute ?? (x => true);
+    }
+
+    public bool CanExecute(object parameter)
+    {
+        return canExecute(parameter);
+    }
+
+    public void Execute(object parameter)
+    {
+        execute(parameter);
+    }
+
+    public event EventHandler CanExecuteChanged;
+
+    public void RaiseCanExecuteChanged()
+    {
+        CanExecuteChanged?.Invoke(this, EventArgs.Empty);
     }
 }
