@@ -1,0 +1,22 @@
+﻿<Window x:Class="TimotheusUS.MVVMsamples.Validation.ViewMain"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:Views="clr-namespace:TimotheusUS.MVVMsamples.Validation"
+        xmlns:ViewModels="clr-namespace:TimotheusUS.MVVMsamples.Validation"
+        Title="MainWindow" Height="700" Width="525">
+
+    <Window.DataContext>
+        <ViewModels:ViewModelMain />
+    </Window.DataContext>
+
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+        <Views:View1 Grid.Row="0" DataContext="{Binding TheViewModel1}" Margin="0,0,-216,0" />
+    </Grid>
+</Window>
