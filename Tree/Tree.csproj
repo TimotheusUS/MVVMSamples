@@ -62,13 +62,12 @@
     <Compile Include="Helper\TreeViewExtended.cs" />
     <Compile Include="Model\Model2.cs" />
     <Compile Include="ViewModel\ViewModelMain.cs" />
-    <Compile Include="View\View2.xaml.cs">
-      <DependentUpon>View2.xaml</DependentUpon>
+    <Compile Include="View\ViewRequirement.xaml.cs">
+      <DependentUpon>ViewRequirement.xaml</DependentUpon>
     </Compile>
     <Compile Include="ViewModel\ViewModel2.cs" />
-    <Compile Include="ViewModel\ViewModelProjectManager.cs" />
-    <Compile Include="View\ViewProjectManager.xaml.cs">
-      <DependentUpon>ViewProjectManager.xaml</DependentUpon>
+    <Compile Include="View\ViewProject.cs">
+      <DependentUpon>ViewProject.xaml</DependentUpon>
     </Compile>
     <Page Include="View\ViewMain.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -82,11 +81,11 @@
       <DependentUpon>ViewMain.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="View\View2.xaml">
+    <Page Include="View\ViewRequirement.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="View\ViewProjectManager.xaml">
+    <Page Include="View\ViewProject.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

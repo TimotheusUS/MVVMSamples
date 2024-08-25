@@ -13,7 +13,26 @@
                 <MenuItem Header="_Open"  />
             </MenuItem>
         </Menu>
-        <Views:ViewProjectManager DockPanel.Dock="Left" DataContext="{Binding ViewModelProjectManager1}" />
-        <Views:View2 DockPanel.Dock="Top" DataContext="{Binding ViewModel2}" />
+        <Label DockPanel.Dock="Top" Foreground="Blue" Margin="5,5,5,0" Content="{Binding Header}"/>
+        <Views:TreeViewExtended ItemsSource="{Binding Projects}" SelectedItemEx="{Binding SelectedItem}">
+            <TreeView.Resources>
+                <HierarchicalDataTemplate DataType="{x:Type ViewModels:ViewModelProject}" ItemsSource="{Binding Path=Requrirements}">
+                    <TextBlock Text="{Binding Name}" />
+                </HierarchicalDataTemplate>
+                <HierarchicalDataTemplate DataType="{x:Type ViewModels:ViewModelRequrirement}">
+                    <TextBlock Text="{Binding Name}" />
+                </HierarchicalDataTemplate>
+            </TreeView.Resources>
+        </Views:TreeViewExtended>
+        <ContentControl Content="{Binding SelectedItem}">
+            <ContentControl.Resources>
+            <DataTemplate DataType="{x:Type ViewModels:ViewModelProject}">
+                <Views:ViewProject />
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type ViewModels:ViewModelRequrirement}">
+                <Views:ViewRequirement />
+            </DataTemplate>
+            </ContentControl.Resources>
+        </ContentControl>
     </DockPanel>
 </Window>

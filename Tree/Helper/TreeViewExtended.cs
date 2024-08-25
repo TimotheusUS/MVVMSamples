@@ -1,28 +1,28 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
+using TimotheusUS.MVVMsamples.Utilities;
 
 namespace TimotheusUS.MVVMsamples.Tree
 {
     public class TreeViewExtended : TreeView
     {
-        public static readonly DependencyProperty SelectedItemExProperty = DependencyProperty.Register("SelectedItemEx", typeof(object), typeof(TreeViewExtended), new FrameworkPropertyMetadata(default(object))
+        public static readonly DependencyProperty SelectedItemExProperty = DependencyProperty.Register(
+            "SelectedItemEx",
+            typeof(ViewModelBase),
+            typeof(TreeViewExtended),
+            new FrameworkPropertyMetadata(default(ViewModelBase), FrameworkPropertyMetadataOptions.BindsTwoWayByDefault)
+        );
+
+        public ViewModelBase SelectedItemEx
         {
-            BindsTwoWayByDefault = true // Required in order to avoid setting the "BindingMode" from the XAML
-        });
-        public object SelectedItemEx
-        {
-            get
-            {
-                return GetValue(SelectedItemExProperty);
-            }
-            set
-            {
-                SetValue(SelectedItemExProperty, value);
-            }
+            get => (ViewModelBase)GetValue(SelectedItemExProperty);
+            set => SetValue(SelectedItemExProperty, value);
         }
+
         protected override void OnSelectedItemChanged(RoutedPropertyChangedEventArgs<object> e)
         {
-            SelectedItemEx = e.NewValue;
+            base.OnSelectedItemChanged(e);
+            SelectedItemEx = e.NewValue as ViewModelBase;
         }
     }
 }

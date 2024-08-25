@@ -2,9 +2,9 @@
 
 namespace TimotheusUS.MVVMsamples.Tree
 {
-    public partial class ViewProjectManager : UserControl
+    public partial class ViewRequirement : UserControl
     {
-        public ViewProjectManager()
+        public ViewRequirement()
         {
             InitializeComponent();
         }
