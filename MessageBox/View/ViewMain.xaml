@@ -1,0 +1,19 @@
+﻿<Window x:Class="TimotheusUS.MVVMsamples.MessageBox.ViewMain"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:Views="clr-namespace:TimotheusUS.MVVMsamples.MessageBox"
+        xmlns:ViewModels="clr-namespace:TimotheusUS.MVVMsamples.MessageBox"
+        Title="MainWindow" Height="700" Width="525">
+    <Window.DataContext>
+        <ViewModels:ViewModelMain />
+    </Window.DataContext>
+    <DockPanel>
+        <StackPanel DockPanel.Dock="Left">
+            <CheckBox x:Name="CheckBoxOpenPopup">Open Popup</CheckBox>
+            <Button Command="{Binding OpenPopupCommand}">Open Popup</Button>
+        </StackPanel>
+        <Views:View1 DockPanel.Dock="Top" DataContext="{Binding ViewModel1}" />
+        <Views:ViewMessageBox DataContext="{Binding ViewModelMessageBox1}" IsOpen="{Binding IsChecked, ElementName=CheckBoxOpenPopup, Mode=TwoWay}" PlacementTarget="{Binding ElementName=CheckBoxOpenPopup}"/>
+        <Views:ViewMessageBox DataContext="{Binding ViewModelMessageBox1}" IsOpen="{Binding IsEnabled, Mode=TwoWay}" PlacementTarget="{Binding ElementName=CheckBoxOpenPopup}"/>
+    </DockPanel>
+</Window>
