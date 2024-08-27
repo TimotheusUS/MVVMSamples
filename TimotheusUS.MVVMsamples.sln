@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessageBox", "MessageBox\Me
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PropertyChanged", "PropertyChanged\PropertyChanged.csproj", "{A716FD64-C43E-485E-8F02-C5E32B30789A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiLanguages", "MultiLanguages\MultiLanguages.csproj", "{A0D39618-2343-4BCC-A094-662EC31F2507}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +83,10 @@ Global
 		{A716FD64-C43E-485E-8F02-C5E32B30789A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A716FD64-C43E-485E-8F02-C5E32B30789A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A716FD64-C43E-485E-8F02-C5E32B30789A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0D39618-2343-4BCC-A094-662EC31F2507}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0D39618-2343-4BCC-A094-662EC31F2507}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0D39618-2343-4BCC-A094-662EC31F2507}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0D39618-2343-4BCC-A094-662EC31F2507}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
