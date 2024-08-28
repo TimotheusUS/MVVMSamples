@@ -1,0 +1,12 @@
+﻿<UserControl x:Class="TimotheusUS.MVVMsamples.DynamicGrid.ViewHeaderRowCell"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             mc:Ignorable="d" 
+             d:DesignHeight="120" d:DesignWidth="300">
+
+    <StackPanel Width="150">
+        <TextBox Text="{Binding MappingId, Mode=TwoWay, UpdateSourceTrigger=LostFocus}" Width="100"/>
+    </StackPanel>
+</UserControl>
