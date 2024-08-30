@@ -1,4 +1,4 @@
-﻿<UserControl x:Class="TimotheusUS.MVVMsamples.DynamicGrid.ViewHeaderRowCell"
+﻿<UserControl x:Class="TimotheusUS.MVVMsamples.DynamicGrid.ViewHeaderColumnCell"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -7,6 +7,6 @@
              d:DesignHeight="120" d:DesignWidth="300">
 
     <StackPanel>
-        <TextBox Text="{Binding MappingId, Mode=TwoWay, UpdateSourceTrigger=LostFocus}"/>
+        <TextBlock Text="{Binding Name}" />
     </StackPanel>
 </UserControl>

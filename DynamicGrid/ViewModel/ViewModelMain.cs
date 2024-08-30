@@ -24,7 +24,7 @@ namespace TimotheusUS.MVVMsamples.DynamicGrid
 
         public ICommand AddCommand
         {
-            get => new RelayCommand(this.viewModelTable.Add);
+            get => new RelayCommand(this.viewModelTable.AddRow);
         }
 
         public ViewModelTable ViewModelTable

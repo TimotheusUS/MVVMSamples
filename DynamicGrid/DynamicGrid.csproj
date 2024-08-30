@@ -60,6 +60,7 @@
     </ApplicationDefinition>
     <Compile Include="Helper\Cfg1.cs" />
     <Compile Include="ViewModel\ICell.cs" />
+    <Compile Include="ViewModel\ViewModelHeaderColumnCell.cs" />
     <Compile Include="ViewModel\ViewModelRow.cs" />
     <Compile Include="ViewModel\ViewModelHeaderRowCell.cs" />
     <Compile Include="ViewModel\ViewModelStdCell.cs" />
@@ -67,6 +68,9 @@
     <Compile Include="ViewModel\ViewModelTable.cs" />
     <Compile Include="Model\Model1.cs" />
     <Compile Include="ViewModel\ViewModelTest.cs" />
+    <Compile Include="View\ViewHeaderColumnCell.xaml.cs">
+      <DependentUpon>ViewHeaderColumnCell.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\ViewStdCell.xaml.cs">
       <DependentUpon>ViewStdCell.xaml</DependentUpon>
     </Compile>
@@ -76,6 +80,10 @@
     <Compile Include="View\ViewTable.xaml.cs">
       <DependentUpon>ViewTable.xaml</DependentUpon>
     </Compile>
+    <Page Include="View\ViewHeaderColumnCell.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="View\ViewMain.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

@@ -6,28 +6,38 @@
              xmlns:Views="clr-namespace:TimotheusUS.MVVMsamples.DynamicGrid"
              xmlns:ViewModels="clr-namespace:TimotheusUS.MVVMsamples.DynamicGrid"
              mc:Ignorable="d" 
-             d:DesignHeight="300" d:DesignWidth="300">
-    <DockPanel >
+             d:DesignHeight="300" d:DesignWidth="500">
+    <DockPanel>
         <DataGrid AutoGenerateColumns="False" ItemsSource="{Binding TableData}">
             <DataGrid.Resources>
-                <DataTemplate DataType="{x:Type ViewModels:ViewModelStdCell}">
-                        <Views:ViewStdCell />
-                    </DataTemplate>
+                <DataTemplate DataType="{x:Type ViewModels:ViewModelHeaderColumnCell}">
+                    <Views:ViewHeaderColumnCell />
+                </DataTemplate>
                 <DataTemplate DataType="{x:Type ViewModels:ViewModelHeaderRowCell}">
                     <Views:ViewHeaderRowCell />
                 </DataTemplate>
+                <DataTemplate DataType="{x:Type ViewModels:ViewModelStdCell}">
+                    <Views:ViewStdCell />
+                </DataTemplate>
                 <ItemsPanelTemplate x:Key="Template4ItemsPanel">
-                    <StackPanel Orientation="Horizontal"/>
+                    <StackPanel Orientation="Horizontal" />
                 </ItemsPanelTemplate>
+                <Style x:Key="MyBorderStyle" TargetType="Border">
+                    <Setter Property="BorderBrush" Value="Aqua" />
+                    <Setter Property="BorderThickness" Value="2" />
+                    <Setter Property="Width" Value="155" />
+                </Style>
             </DataGrid.Resources>
             <DataGrid.Columns>
-                <DataGridTemplateColumn>
+                <DataGridTemplateColumn >
                     <DataGridTemplateColumn.HeaderTemplate>
                         <DataTemplate>
-                            <ItemsControl ItemsSource="{Binding RelativeSource={RelativeSource Self}, Path=DataContext.HeaderColumns, Mode=TwoWay}" ItemsControl.ItemsPanel="{StaticResource Template4ItemsPanel}">
+                            <ItemsControl ItemsSource="{Binding DataContext.HeaderColumns, RelativeSource={RelativeSource AncestorType={x:Type DataGrid}}}" ItemsControl.ItemsPanel="{StaticResource Template4ItemsPanel}">
                                 <ItemsControl.ItemTemplate>
                                     <DataTemplate>
-                                        <TextBlock Width="{Binding Width}" Foreground="{Binding Color}" Text="{Binding Data, Mode=TwoWay}"/>
+                                        <Border Style="{StaticResource MyBorderStyle}">
+                                            <ContentControl Content="{Binding}" HorizontalAlignment="Center"/>
+                                        </Border>
                                     </DataTemplate>
                                 </ItemsControl.ItemTemplate>
                             </ItemsControl>
@@ -38,8 +48,8 @@
                             <ItemsControl ItemsSource="{Binding Row}" ItemsControl.ItemsPanel="{StaticResource Template4ItemsPanel}">
                                 <ItemsControl.ItemTemplate>
                                     <DataTemplate>
-                                        <Border BorderBrush="Turquoise" BorderThickness="2">
-                                            <ContentControl Content="{Binding}" />
+                                        <Border Style="{StaticResource MyBorderStyle}">
+                                            <ContentControl Content="{Binding}" HorizontalAlignment="Center"/>
                                         </Border>
                                     </DataTemplate>
                                 </ItemsControl.ItemTemplate>

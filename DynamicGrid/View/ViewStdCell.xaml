@@ -6,7 +6,7 @@
              mc:Ignorable="d" 
              d:DesignHeight="120" d:DesignWidth="300">
 
-    <StackPanel Width="150">
+    <StackPanel Width="100">
         <ComboBox SelectedItem="{Binding SelectedChannel}" >
             <ComboBoxItem>Channel 0</ComboBoxItem>
             <ComboBoxItem>Channel 1</ComboBoxItem>
